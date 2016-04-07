@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jundat95.woorestaurant.Orders.OrdersActivity">
+
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/github"
+                />
+            <com.jundat95.woorestaurant.CustomTextView.robotoBold
+                android:id="@+id/orders_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steve Jobs"
+                android:textSize="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            >
+            <com.jundat95.woorestaurant.CustomTextView.robotoRegular
+                android:id="@+id/orders_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address1: Lê Ninh Kinh Môn"
+                android:textSize="15dp"
+                />
+            <com.jundat95.woorestaurant.CustomTextView.robotoRegular
+                android:id="@+id/orders_address1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Address2: Đội 17-Ninh Xá-Lê Ninh-Kinh Môn"
+                />
+            <com.jundat95.woorestaurant.CustomTextView.robotoRegular
+                android:id="@+id/orders_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="City: Hải Dương"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+            <com.jundat95.woorestaurant.CustomTextView.robotoLight
+                android:id="@+id/orders_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Phone Number: 0974768298"
+                />
+            <com.jundat95.woorestaurant.CustomTextView.robotoLight
+                android:id="@+id/orders_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Email: gjundat95@gmail.com"
+                />
+            <com.jundat95.woorestaurant.CustomTextView.robotoLight
+                android:id="@+id/orders_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Date: 20.02.2016 5:46 PM"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        >
+        <com.jundat95.woorestaurant.CustomTextView.robotoMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Note:"
+            />
+        <com.jundat95.woorestaurant.CustomTextView.robotoLight
+            android:id="@+id/orders_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chuyen hang nhanh cho dai ca con an"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        >
+        <com.jundat95.woorestaurant.CustomTextView.robotoMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List Orders:"
+            android:textSize="15dp"
+            />
+        <ListView
+            android:id="@+id/listview_items"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="1dp"
+        >
+        <Button
+            android:id="@+id/change_paid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paid"
+            style="?android:buttonStyleSmall"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:id="@+id/orders_price_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:text="Count: 85$"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

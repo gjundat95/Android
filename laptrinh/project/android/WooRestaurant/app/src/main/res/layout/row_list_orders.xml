@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/row_list_order_Photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/wordpress"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            >
+            <com.jundat95.woorestaurant.CustomTextView.robotoBold
+                android:id="@+id/row_list_order_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID: 12345"
+                android:textSize="12dp"
+                android:singleLine="true"
+                />
+            <com.jundat95.woorestaurant.CustomTextView.robotoMedium
+                android:id="@+id/row_list_order_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Name"
+                android:textSize="19dp"
+                android:singleLine="true"
+                />
+            <com.jundat95.woorestaurant.CustomTextView.robotoLight
+                android:id="@+id/row_list_order_Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Address"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/row_list_order_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20:50"
+                android:layout_gravity="center"
+                />
+            <ImageView
+                android:id="@+id/row_list_order_Paid"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/check"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
